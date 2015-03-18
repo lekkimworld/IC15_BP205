@@ -1,0 +1,49 @@
+<html>
+<body>
+<div id="widget">Loading...</div>
+<script type="text/javascript" src="/ontime/common/dojo/1.6.1/dojo.js"></script>
+<script type="text/javascript" src="widget.js"></script>
+<script type="text/javascript">
+var attrs = {
+
+}
+var widget = new BP205Widget();
+widget.iContext = {
+	"getiWidgetAttributes": function() {
+		return {
+			"getItemValue": function(item) {
+				return attrs[item];
+			}
+		};
+	},
+	"getRootElement": function() {
+		return document.getElementById("widget");
+	},
+	"iEvents": {
+		"fireEvent": function(mode, type, payload) {
+			console.log("iContext.iEvent.fireEvent(<" + mode + ">, <" + type + ">, <" + payload + ">)");
+		}
+	},
+	"io": {
+		"rewriteURI": function(url) {
+			var rewrittenUrl = "";
+			var idx = -1;
+			if (url.substring(0, 8) == "https://") {
+				rewrittenUrl = "https/";
+				idx = 8;
+			} else {
+				rewrittenUrl = "http/";
+				idx = 7;
+			}
+			rewrittenUrl += url.substring(idx);
+			return "/profiles/ajaxProxy/" + rewrittenUrl;
+		}
+	}
+}
+if (widget.hasOwnProperty("onLoad")) {
+	wiget.onLoad();
+}
+widget.onView();
+
+</script>
+</body></html>

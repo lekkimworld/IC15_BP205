@@ -1,0 +1,11 @@
+wsadmin>import sys
+wsadmin>execfile("oauthAdmin.py")
+Connecting to WebSphere:name=OAuthApplicationRegistrationService,type=LotusConnections,cell=LCCell01,node=appNode01,*
+OAuth Administration initialized.
+wsadmin>OAuthApplicationRegistrationService.addApplication("bp205", "BP205 Demo", "https://inside.intravision.dk/bp205/oauth20_cb")
+An application was added with the new id bp205.
+'bp205'
+wsadmin>clientSecret = OAuthApplicationRegistrationService.getApplicationById("bp205").get("client_secret")
+wsadmin>print clientSecret
+MSGxGCQhGUcM93n50CalSk1Du1svohfy3SattAqhRDQcmpJYUGL0mEirCrpZ
+wsadmin>

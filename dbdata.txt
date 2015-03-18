@@ -1,0 +1,40 @@
+connect to commcal user lcuser using SkovKanin2; 
+
+delete from commcal.community;
+delete from commcal.user;
+delete from commcal.CONFIGURATION;
+delete from commcal.tokens;
+
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('BASE_URL', 'inside.intravision.dk');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('SERVICE_PROFILES', '/profiles');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('SERVICE_COMMUNITIES', '/communities');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('SERVICE_CONNECTIONS', '/connections');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('SERVICE_OAUTH2', '/oauth2');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('OAUTH_CLIENT_ID', 'bp205');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('OAUTH_CLIENT_SECRET', 'lxhcW1hcvX5Pbk8jRT1FRlzPfAw8TwCJFFU3oDhTsLWZjg19KsD47Y5KYoA7');
+INSERT INTO COMMCAL.CONFIGURATION (KEY, VALUE) VALUES ('OAUTH_CALLBACK', 'https://inside.intravision.dk/bp205/oauth20_cb');
+
+insert into commcal.community (comm_id, comm_name) values ('1bbd6b72-100e-430c-9545-5e26c60f2717', 'lekkim test community');
+insert into commcal.community (comm_id, comm_name) values ('c78db100-7cc5-473a-99e7-a187537276ac', 'IBM Licenses & Products');
+
+insert into commcal.event (event_id, event_type, comm_id, start_dt, end_dt, allday, location, subject, url) values ('3a2cdbe6-10b4-4611-9444-f26ff15f83aa', 'C', '1bbd6b72-100e-430c-9545-5e26c60f2717', timestamp_format('2014-05-20 13:00', 'YYYY-MM-DD HH24:MI')-CURRENT TIMEZONE, timestamp_format('2014-05-20 15:00', 'YYYY-MM-DD HH24:MI')-CURRENT TIMEZONE, '0', 'My location', 'My Subject 1', '/service/html/communityview?communityUuid=ad81297d-d4f5-4af7-a836-0c0151cd3976#fullpageWidgetId=W26040986083f_49e3_b146_4a9e1e90df88&eventUuid=3a2cdbe6-10b4-4611-9444-f26ff15f83aa');
+insert into commcal.event (event_id, event_type, comm_id, start_dt, end_dt, allday, location, subject, url) values ('3a2cdbe6-10b4-4611-9444-f26ff15f83ab', 'C', '1bbd6b72-100e-430c-9545-5e26c60f2717', timestamp_format('2014-05-21 13:00', 'YYYY-MM-DD HH24:MI')-CURRENT TIMEZONE, timestamp_format('2014-05-21 15:00', 'YYYY-MM-DD HH24:MI')-CURRENT TIMEZONE, '0', 'My location', 'My Subject 2', '/service/html/communityview?communityUuid=ad81297d-d4f5-4af7-a836-0c0151cd3976#fullpageWidgetId=W26040986083f_49e3_b146_4a9e1e90df88&eventUuid=3a2cdbe6-10b4-4611-9444-f26ff15f83ab');
+
+insert into commcal.event (event_id, event_type, comm_id, start_dt, end_dt, allday, location, subject, url) values ('3a2cdbe6-10b4-4611-9444-f26ff15f83ac', 'C', 'c78db100-7cc5-473a-99e7-a187537276ac', timestamp_format('2014-05-21 13:00', 'YYYY-MM-DD HH24:MI')-CURRENT TIMEZONE, timestamp_format('2014-05-21 15:00', 'YYYY-MM-DD HH24:MI')-CURRENT TIMEZONE, '0', 'My location', 'My Subject 2', '/service/html/communityview?communityUuid=c78db100-7cc5-473a-99e7-a187537276ac#fullpageWidgetId=W26040986083f_49e3_b146_4a9e1e90df88&eventUuid=3a2cdbe6-10b4-4611-9444-f26ff15f83ab');
+
+
+insert into commcal.user (user_key, uid, email) values ('3a48d7d0-6894-4a4b-bf3f-20b53f893ae6', 'mh', 'mfh@intravision.dk');
+insert into commcal.user (user_key, uid, email) values ('408728c3-e0b5-4612-95e4-2a1da186f4a6', 'ls', 'ls@intravision.dk');
+insert into commcal.user (user_key, uid, email) values ('1352217a-889a-41ac-bddc-f5a21e5a40c4', 'jod', 'jod@intravision.dk');
+
+insert into commcal.user_community (user_key, comm_id, auto_action) values ('3a48d7d0-6894-4a4b-bf3f-20b53f893ae6', '1bbd6b72-100e-430c-9545-5e26c60f2717', 'A');
+insert into commcal.user_community (user_key, comm_id, auto_action) values ('1352217a-889a-41ac-bddc-f5a21e5a40c4', '1bbd6b72-100e-430c-9545-5e26c60f2717', 'R');
+
+insert into commcal.user_event (user_key, event_id, action, unid) values ('3a48d7d0-6894-4a4b-bf3f-20b53f893ae6', '3a2cdbe6-10b4-4611-9444-f26ff15f83aa', 'A', '12345678901234567890123456789012');
+insert into commcal.user_event (user_key, event_id, action, unid) values ('3a48d7d0-6894-4a4b-bf3f-20b53f893ae6', '3a2cdbe6-10b4-4611-9444-f26ff15f83ab', 'A', '12345678901234567890123456789012');
+insert into commcal.user_event (user_key, event_id, action, unid) values ('1352217a-889a-41ac-bddc-f5a21e5a40c4', '3a2cdbe6-10b4-4611-9444-f26ff15f83aa', 'A', '12345678901234567890123456789012');
+insert into commcal.user_event (user_key, event_id, action, unid) values ('1352217a-889a-41ac-bddc-f5a21e5a40c4', '3a2cdbe6-10b4-4611-9444-f26ff15f83ab', 'R', null);
+insert into commcal.user_event (user_key, event_id, action, unid) values ('408728c3-e0b5-4612-95e4-2a1da186f4a6', '3a2cdbe6-10b4-4611-9444-f26ff15f83aa', 'A', '12345678901234567890123456789012');
+
+disconnect all;
+

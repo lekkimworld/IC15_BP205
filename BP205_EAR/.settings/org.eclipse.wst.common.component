@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BP205_EAR">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="BP205_WAR.war" deploy-path="/" handle="module:/resource/BP205_WAR/BP205_WAR">
+            <dependent-object>Module_1421053624829</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BP205_EJB.jar" deploy-path="/" handle="module:/resource/BP205_EJB/BP205_EJB">
+            <dependent-object>Module_1421053703882</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BP205_EJBClient.jar" deploy-path="/" handle="module:/resource/BP205_EJBClient/BP205_EJBClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="BP205_JAR.jar" deploy-path="/lib" handle="module:/resource/BP205_JAR/BP205_JAR">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,94 @@
+http://inside.intravision.dk/communities/calendar/atom/calendar/service?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461
+
+<?xml version="1.0" encoding="UTF-8"?>
+<service xmlns="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom">
+  <generator xmlns="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom" uri="http://www.ibm.com/xmlns/prod/sn" version="5.0.0.0">IBM Connections - Community Events</generator>
+  <workspace xmlns="http://www.w3.org/2007/app">
+    <atom:title xmlns:atom="http://www.w3.org/2005/Atom" type="text">Community Events</atom:title>
+    <collection href="http://inside.intravision.dk/communities/calendar/atom/calendar?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461">
+      <atom:title xmlns:atom="http://www.w3.org/2005/Atom" type="text">Community Events</atom:title>
+      <accept>application/atom+xml; type=entry</accept>
+      <category xmlns="http://www.w3.org/2005/Atom" scheme="http://www.ibm.com/xmlns/prod/sn/collection" term="calendars"></category>
+      <categories xmlns="http://www.w3.org/2007/app" xmlns:atom="http://www.w3.org/2005/Atom" fixed="yes"></categories>
+    </collection>
+  </workspace>
+  <workspace>
+    <atom:title xmlns:atom="http://www.w3.org/2005/Atom" type="text">BP205</atom:title>
+    <category xmlns="http://www.w3.org/2005/Atom" scheme="http://www.ibm.com/xmlns/prod/sn/workspace" term="calendar"></category>
+    <collection xmlns="http://www.w3.org/2007/app" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461">
+      <atom:title xmlns:atom="http://www.w3.org/2005/Atom" type="text">Event Entries</atom:title>
+      <category xmlns="http://www.w3.org/2005/Atom" scheme="http://www.ibm.com/xmlns/prod/sn/collection" term="events"></category>
+      <accept xmlns="http://www.w3.org/2007/app">application/atom+xml; type=entry</accept>
+      <categories xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/tagcloud?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461"></categories>
+    </collection>
+  </workspace>
+</service>
+
+http://inside.intravision.dk/communities/calendar/atom/calendar/event?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461&startDate=2000-01-01T00:00:00.000Z&endDate=2016-01-01T00:00:00.000Z&lang=en_us
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:snx="http://www.ibm.com/xmlns/prod/sn" xmlns:thr="http://purl.org/syndication/thread/1.0">
+  <generator xmlns:atom="http://www.w3.org/2005/Atom" uri="http://www.ibm.com/xmlns/prod/sn" version="5.0.0.0">IBM Connections - Community Events</generator>
+  <snx:communityUuid xmlns:snx="http://www.ibm.com/xmlns/prod/sn">f2f1dd90-222e-4eec-8b52-db0af0fa7461</snx:communityUuid>
+  <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/service/atom/community/instance?communityUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461" rel="http://www.ibm.com/xmlns/prod/sn/container" type="application/atom+xml"></link>
+  <id xmlns:atom="http://www.w3.org/2005/Atom">urn:lsid:ibm.com:calendar:events:f2f1dd90-222e-4eec-8b52-db0af0fa7461</id>
+  <title xmlns:atom="http://www.w3.org/2005/Atom" type="text">BP205 - Community Events</title>
+  <updated xmlns:atom="http://www.w3.org/2005/Atom">2015-01-14T12:47:05.000Z</updated>
+  <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?startDate=2000-01-01T00:00:00.000Z&amp;ps=10&amp;calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461&amp;endDate=2016-01-01T00:00:00.000Z&amp;lang=en_us&amp;page=1" rel="self" type="application/atom+xml"></link>
+  <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/service/html/communityview?communityUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461#fullpageWidgetId=Wfe61eacf6e6d_4b63_9662_d3662f9a3372&amp;startDate=2000-01-01T00:00:00.000Z&amp;ps=10&amp;calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461&amp;endDate=2016-01-01T00:00:00.000Z&amp;lang=en_us&amp;page=1" rel="alternate" type="text/html"></link>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1</opensearch:totalResults>
+  <entry xmlns:atom="http://www.w3.org/2005/Atom" xmlns:snx="http://www.ibm.com/xmlns/prod/sn" xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <id xmlns:atom="http://www.w3.org/2005/Atom">urn:lsid:ibm.com:calendar:event:07057269-a87d-4a91-815d-2b80697f501e</id>
+    <snx:eventUuid xmlns:snx="http://www.ibm.com/xmlns/prod/sn">fc7a57dd26b74e498bc6d62f86df854c-013</snx:eventUuid>
+    <snx:eventInstUuid xmlns:snx="http://www.ibm.com/xmlns/prod/sn">07057269-a87d-4a91-815d-2b80697f501e</snx:eventInstUuid>
+    <title xmlns:atom="http://www.w3.org/2005/Atom" type="text">Event 1</title>
+    <published xmlns:atom="http://www.w3.org/2005/Atom">2015-01-14T12:47:05.000Z</published>
+    <author xmlns:atom="http://www.w3.org/2005/Atom">
+      <snx:userid xmlns:snx="http://www.ibm.com/xmlns/prod/sn">1FCAA008-88CE-8447-C125-734C0035C155</snx:userid>
+      <email xmlns:atom="http://www.w3.org/2005/Atom">mfh@intravision.dk</email>
+      <name xmlns:atom="http://www.w3.org/2005/Atom">Mikkel Flindt Heisterberg</name>
+      <snx:userState xmlns:snx="http://www.ibm.com/xmlns/prod/sn">active</snx:userState>
+      <snx:isExternal xmlns:snx="http://www.ibm.com/xmlns/prod/sn">false</snx:isExternal>
+    </author>
+    <updated xmlns:atom="http://www.w3.org/2005/Atom">2015-01-14T12:47:05.000Z</updated>
+    <contributor xmlns:atom="http://www.w3.org/2005/Atom">
+      <snx:userid xmlns:snx="http://www.ibm.com/xmlns/prod/sn">1FCAA008-88CE-8447-C125-734C0035C155</snx:userid>
+      <email xmlns:atom="http://www.w3.org/2005/Atom">mfh@intravision.dk</email>
+      <name xmlns:atom="http://www.w3.org/2005/Atom">Mikkel Flindt Heisterberg</name>
+      <snx:userState xmlns:snx="http://www.ibm.com/xmlns/prod/sn">active</snx:userState>
+      <snx:isExternal xmlns:snx="http://www.ibm.com/xmlns/prod/sn">false</snx:isExternal>
+    </contributor>
+    <snx:startDate xmlns:snx="http://www.ibm.com/xmlns/prod/sn">2015-01-14T12:00:00.000Z</snx:startDate>
+    <snx:endDate xmlns:snx="http://www.ibm.com/xmlns/prod/sn">2015-01-14T13:00:00.000Z</snx:endDate>
+    <snx:repeats xmlns:snx="http://www.ibm.com/xmlns/prod/sn">false</snx:repeats>
+    <category xmlns:atom="http://www.w3.org/2005/Atom" scheme="http://www.ibm.com/xmlns/prod/sn/type" term="event-instance"></category>
+    <snx:location xmlns:snx="http://www.ibm.com/xmlns/prod/sn"></snx:location>
+    <snx:allday xmlns:snx="http://www.ibm.com/xmlns/prod/sn">0</snx:allday>
+    <summary xmlns:atom="http://www.w3.org/2005/Atom" type="html">&amp;#160;</summary>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e&amp;lang=en_us" rel="self" type="application/atom+xml"></link>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e" rel="edit" type="application/atom+xml"></link>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/service/html/communityview?communityUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461#fullpageWidgetId=Wfe61eacf6e6d_4b63_9662_d3662f9a3372&amp;eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e" rel="alternate" type="text/html"></link>
+    <snx:parentEvent xmlns:snx="http://www.ibm.com/xmlns/prod/sn">fc7a57dd26b74e498bc6d62f86df854c-013</snx:parentEvent>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?mode=summary&amp;eventUuid=fc7a57dd26b74e498bc6d62f86df854c-013&amp;lang=en_us" rel="http://www.ibm.com/xmlns/prod/sn/calendar/event/parentevent" type="application/atom+xml"></link>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/follow?type=attend&amp;eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e" rel="http://www.ibm.com/xmlns/prod/sn/calendar/event/attend" type="application/atom+xml"></link>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/follow?type=follow&amp;eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e" rel="http://www.ibm.com/xmlns/prod/sn/calendar/event/follow" type="application/atom+xml"></link>
+    <snx:followed xmlns:snx="http://www.ibm.com/xmlns/prod/sn">none</snx:followed>
+    <snx:attended xmlns:snx="http://www.ibm.com/xmlns/prod/sn">instance</snx:attended>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event/attendees?type=attend&amp;eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e&amp;lang=en_us" rel="http://www.ibm.com/xmlns/prod/sn/calendar/event/attendees" type="application/atom+xml"></link>
+    <source xmlns:atom="http://www.w3.org/2005/Atom">
+      <id xmlns:atom="http://www.w3.org/2005/Atom">urn:lsid:ibm.com:calendar:events:f2f1dd90-222e-4eec-8b52-db0af0fa7461</id>
+      <title xmlns:atom="http://www.w3.org/2005/Atom" type="text">BP205 - Community Events</title>
+      <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461&amp;lang=en_us" rel="self" type="application/atom+xml"></link>
+      <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event?calendarUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461" rel="edit" type="application/atom+xml"></link>
+    </source>
+    <snx:communityUuid xmlns:snx="http://www.ibm.com/xmlns/prod/sn">f2f1dd90-222e-4eec-8b52-db0af0fa7461</snx:communityUuid>
+    <link xmlns:atom="http://www.w3.org/2005/Atom" href="http://inside.intravision.dk/communities/service/atom/community/instance?communityUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461" rel="http://www.ibm.com/xmlns/prod/sn/container" type="application/atom+xml"></link>
+    <collection xmlns="http://www.w3.org/2007/app" href="http://inside.intravision.dk/communities/calendar/atom/calendar/event/comment?eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e">
+      <atom:title xmlns:atom="http://www.w3.org/2005/Atom" type="text">Event Comments</atom:title>
+      <category xmlns="http://www.w3.org/2005/Atom" scheme="http://www.ibm.com/xmlns/prod/sn/collection" term="comments"></category>
+      <accept xmlns="http://www.w3.org/2007/app">application/atom+xml; type=entry</accept>
+    </collection>
+  </entry>
+</feed>
+
+POST/DELETE http://inside.intravision.dk/communities/calendar/atom/follow?eventInstUuid=fa27c245-59c8-4f6d-a4ce-d1b1be9842f5&type=attend

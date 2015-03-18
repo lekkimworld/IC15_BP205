@@ -1,0 +1,10 @@
+<iw:iwidget id="com.ontimesuite.gc.labs.bp205" xmlns:iw="http://www.ibm.com/xmlns/prod/iWidget"
+	supportedModes="view" mode="view" lang="en" 
+	iScope="BP205Widget" allowInstanceContent="true">
+	
+	<iw:resource uri="./widget.js" />
+	
+	<iw:content mode="view">
+		Loading...
+	</iw:content>
+</iw:iwidget>

@@ -1,0 +1,3 @@
+bin/featureManager install jmsMdb-3.1 --when-file-exists=ignore
+bin/featureManager install wasJmsClient-1.1 --when-file-exists=ignore
+bin/featureManager install wasJmsServer-1.0 --when-file-exists=ignore

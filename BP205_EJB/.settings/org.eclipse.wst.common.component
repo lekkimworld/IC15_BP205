@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="BP205_EJB">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <property name="java-output-path" value="/BP205_EJB/build/classes"/>
+        <property name="ClientProject" value="BP205_EJBClient"/>
+        <property name="ClientJARURI" value="BP205_EJBClient.jar"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,24 @@
+{"generator": {"id": "otgc_commcal"},
+	"actor": {
+		"id": "1FCAA008-88CE-8447-C125-734C0035C155"
+	},
+	"to":  [{"objectType": "community", "id": "urn:lsid:lconn.ibm.com:communities.community:f2f1dd90-222e-4eec-8b52-db0af0fa7461"}],
+	"verb": "accept",
+	"title": "${create}",
+	"updated": "2015-01-14T12:44:00.000Z",
+	"object": {
+		"summary": "Event 1",
+		"objectType": "community meeting",
+		"id": "07057269-a87d-4a91-815d-2b80697f501e",
+		"url": "/communities/service/html/communityview?communityUuid=f2f1dd90-222e-4eec-8b52-db0af0fa7461#fullpageWidgetId=Wfe61eacf6e6d_4b63_9662_d3662f9a3372&eventInstUuid=07057269-a87d-4a91-815d-2b80697f501e"
+	},
+	"connections": {
+		"rollupid": "07057269-a87d-4a91-815d-2b80697f501e"
+	}
+}
+
+Mikkel
+GUID 	: 1FCAA008-88CE-8447-C125-734C0035C155
+Key 	: 3a48d7d0-6894-4a4b-bf3f-20b53f893ae6
+
+f2f1dd90-222e-4eec-8b52-db0af0fa7461

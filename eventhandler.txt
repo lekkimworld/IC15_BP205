@@ -1,0 +1,21 @@
+<postHandler enabled="true" invoke="ASYNC" name="OTGCCommunityCalendar" class="com.ontimesuite.gc.labs.bp205.CommunityCalendarEventHandler">
+	<subscriptions>
+	<!--
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.created"/>
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.followed"/>
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.unfollowed"/>
+	-->
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.rsvped"/>
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.unrsvped"/>
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.created"/>
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.updated"/>
+		<subscription source="*" type="*" eventName="community.calendar.event.entry.deleted"/>
+		<subscription source="*" type="*" eventName="community.calendar.deleted"/>
+		<subscription source="*" type="*" eventName="community.removed"/>
+		<subscription source="*" type="*" eventName="community.updated"/>
+	</subscriptions>
+	<properties>
+		<property name="queueUsername">wasadmin</property>
+		<property name="queuePassword">big_big_secret</property>
+	</properties>
+</postHandler>
